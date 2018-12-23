@@ -31,7 +31,7 @@
 		<header id="masthead" class="site-header container">
 		<nav id="menu" class="navbar navbar-expand-lg" role="navigation">
 			<div class="site-branding navbar-brand">
-				<a href="/servillantasadomicilio">
+				<a href="/">
 					<img class="logo" alt="Servillantas Hecdiz">
 				</a>
 			</div><!-- .site-branding -->
