@@ -39,8 +39,8 @@ function slh_contact_result($data) {
 
 	// $mail->From = 'zanddro@gmail.com';
 	$mail->FromName = 'Sitio Web Servillantas Hecdiz';
-	$mail-> AddAddress('zanddro@hotmail.com');
-	$mail-> AddCC('servillantasmx@gmail.com');
+	$mail-> AddAddress('servillantasmx@gmail.com');
+	$mail-> AddCC('codeincmx@gmail.com');
 
 	$mail->WordWrap = 50;
 	$mail->IsHTML(true);
@@ -49,11 +49,18 @@ function slh_contact_result($data) {
 
 	$mail->IsSMTP();
 	$mail->SMTPAuth = true;
-	$mail->Host = 'smtp.gmail.com';
+	// for gmail account
+	// $mail->Host = 'smtp.gmail.com';
+	// $mail->Port = 587;
+	// $mail->SMTPSecure = 'tls';
+	// $mail->Username = 'contacto@servillantasadomicilio.com';
+	// $mail->Password = '0VVxKMmNAgJK';
+
+	// For hsotenger email 
+	$mail->Host = 'smtp.hostinger.mx';
 	$mail->Port = 587;
-	$mail->SMTPSecure = 'tls';
-	$mail->Username = 'zanddro@gmail.com';
-	$mail->Password = 'sya2026083gm';
+	$mail->Username = 'contacto@servillantasadomicilio.com';
+	$mail->Password = '0VVxKMmNAgJK';
 
 	if( !$mail->Send() ){
 		$json_result['error'] = 1;
