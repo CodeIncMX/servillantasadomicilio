@@ -37,9 +37,9 @@ function slh_contact_result($data) {
 
 	$mail = new PHPMailer();
 
-	// $mail->From = 'zanddro@gmail.com';
 	$mail->FromName = 'Sitio Web Servillantas Hecdiz';
 	$mail-> AddAddress('servillantasmx@gmail.com');
+	// $mail-> AddAddress('zanddro@hotmail.com');
 	$mail-> AddCC('codeincmx@gmail.com');
 
 	$mail->WordWrap = 50;
@@ -49,6 +49,7 @@ function slh_contact_result($data) {
 
 	$mail->IsSMTP();
 	$mail->SMTPAuth = true;
+
 	// for gmail account
 	// $mail->Host = 'smtp.gmail.com';
 	// $mail->Port = 587;
@@ -60,6 +61,7 @@ function slh_contact_result($data) {
 	$mail->Host = 'smtp.hostinger.mx';
 	$mail->Port = 587;
 	$mail->Username = 'contacto@servillantasadomicilio.com';
+	$mail->From = 'contacto@servillantasadomicilio.com';
 	$mail->Password = '0VVxKMmNAgJK';
 
 	if( !$mail->Send() ){
