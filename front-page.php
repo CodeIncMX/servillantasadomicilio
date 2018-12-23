@@ -41,7 +41,7 @@ get_header();
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <form id="bymessure-form" action="servillantasadomicilio/busqueda-por-medida/">
+                            <form id="bymessure-form" action="/busqueda-por-medida/">
                                 <button id="bymessure-btn" class="sl-btn skewed">
                                     <p>Por Medida <i class="compass-icon"></i></p>
                                 </button>
