@@ -159,12 +159,13 @@ $desc = get_post_meta( $post->ID, '_tire_description_value_key', true );
             </div>  
             <div class="col-12 asking">
                 <p>
-                    Por favor confírmanos tu pedido, puedes realizarlo, vía telefónica, por WhatsApp o messenger de Facebook
+                    Por favor confírmanos tu pedido, puedes realizarlo, vía telefónica, por WhatsApp, messenger de Facebook o correo electrónico
                 </p>
                 <div class="center">
                     <a href="tel:5215512741853" class="sl-btn rounded" ><i class="phone-icon"></i></a>
                     <a href="https://wa.me/5215512741853?text=Hola%20quiero%20COMPROBAR%20EXISTENCIA%20de%20la%20llanta%20<?php echo $brand ?>%20<?php echo $name ?>%20<?php echo $desc ?>" class="sl-btn rounded" ><i class="whatsapp-icon"></i></a>
                     <a href="http://m.me/servillantashecdiz" class="sl-btn rounded" ><i class="messenger-icon"></i></a>
+					<a href="mailto:servillantasmx@gmail.com?subject=Comprobar%20existencia&body=Hola%20quiero%20COMPROBAR%20EXISTENCIA%20de%20la%20llanta%20<?php echo $brand ?>%20<?php echo $name ?>%20<?php echo $desc ?>" class="sl-btn rounded" ><i class="mail-icon"></i></a>
                 </div>
 
         </div> <!-- .row step -->
