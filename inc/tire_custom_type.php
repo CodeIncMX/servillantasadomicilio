@@ -174,7 +174,38 @@ function slh_by_messure_result($data){
 
 	$args = array(
 		"post_type" => 'inventario',
-		"posts_per_page" => -1
+		"meta_query" => array(
+			'relation' => 'AND',
+			'width_clause' => array(
+				'key' => '_tire_width_value_key',
+				'value' => array(''),
+				// 'value' => array(100,500),
+				// 'type' => 'numeric',
+				'compare' => 'NOT IN',
+				// 'compare' => 'BETWEEN',
+			),
+			'index_clause' => array(
+				'key' => '_tire_index_value_key',
+				'value' => 0,
+				'type' => 'numeric',
+				'compare' => '>',
+			),
+			'diameter_clause' => array(
+				'key' => '_tire_diameter_value_key',
+				'value' => 0,
+				'type' => 'numeric',
+				'compare' => '>',
+			),
+		),
+		'orderby' => array(
+			'width_clause' => 'ASC',
+			// 'index_clause' => 'ASC',
+			// 'diameter_clause' => 'ASC',
+ 		),
+		// "orderby" => 'meta_value_num',
+		// "meta_key" => array('_tire_diameter_value_key'),
+		// "order" => 'ASC',
+		"posts_per_page" => -1,
 	);
 
 	$json_result = array(
@@ -190,10 +221,10 @@ function slh_by_messure_result($data){
 	
 	if (!isset ($data['width']) ) {
 
-		$args["meta_query"][] = array(
-			"key" => "_tire_width_value_key",
-			'orderby' => '_tire_width_value_key'
-		);
+		// $args["meta_query"][] = array(
+		// 	"key" => "_tire_width_value_key",
+		// 	'orderby' => '_tire_width_value_key',
+		// );
 	}else{
 		array_push( $json_result["messure"]["width"], $data['width']);
 		$param_num++;
@@ -471,6 +502,7 @@ function readCSVFile($file){
 							}
 						}
 
+						if($value === '#VALUE!') $value="";
 						$post[$newLine][$key] = $value;
 					}
 				}
