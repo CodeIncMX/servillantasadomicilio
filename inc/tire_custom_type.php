@@ -174,7 +174,7 @@ function slh_by_messure_result($data){
 
 	$args = array(
 		"post_type" => 'inventario',
-		"post_per_page" => -1
+		"posts_per_page" => -1
 	);
 
 	$json_result = array(
