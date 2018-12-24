@@ -22,9 +22,9 @@ $name = get_post_meta( $post->ID, '_tire_name_value_key', true );
 $desc = get_post_meta( $post->ID, '_tire_description_value_key', true );
 
 //Used it in devpeloment stage
-$urlHome = "/servillantasadomicilio";
+//$urlHome = "/servillantasadomicilio";
 //Used it in production hosting 
-// $urlHome = "";
+ $urlHome = "";
 
 
 ?>
