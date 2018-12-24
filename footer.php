@@ -41,7 +41,7 @@
 					<h2>Contacto</h2>
 					<a href="tel:5215512741853">(55) 1274 1853 <i class="phone-icon"></i></a>
 					<a href="https://wa.me/5215512741853?text=Me%20gustaría%20contarcar%20con%20servillantas%20a%20domicilio"><i class="whatsapp-icon"></i></a>
-					<br/><a href="mailto:contacto@hecdiz.com">contacto@hecdiz.com<i class="mail-icon"></i></a>
+					<br/><a href="mailto:servillantasmx@gmail.com">servillantasmx@gmail.com<i class="mail-icon"></i></a>
 					<div class="social">
 						<a href="https://www.facebook.com/servillantashecdiz/"> <i class="facebook-icon margin-left-cero"></i></a>
 						<a href="https://www.instagram.com/servillantasmx/"> <i class="instagram-icon"></i></a>
